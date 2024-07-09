@@ -53,6 +53,11 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel)
     // LiveData
     implementation(libs.androidx.lifecycle.livedata)
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    //coroutines
+    implementation(libs.coroutines)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

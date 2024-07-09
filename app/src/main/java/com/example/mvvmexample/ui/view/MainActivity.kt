@@ -1,4 +1,4 @@
-package com.example.mvvmexample.view
+package com.example.mvvmexample.ui.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.mvvmexample.R
 import com.example.mvvmexample.databinding.ActivityMainBinding
-import com.example.mvvmexample.viewmodel.QuoteViewModel
+import com.example.mvvmexample.ui.viewmodel.QuoteViewModel
 
 class MainActivity : AppCompatActivity() {
 

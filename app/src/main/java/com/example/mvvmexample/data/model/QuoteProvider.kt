@@ -1,4 +1,4 @@
-package com.example.mvvmexample.model
+package com.example.mvvmexample.data.model
 
 class QuoteProvider {
 
