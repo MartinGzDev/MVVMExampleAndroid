@@ -66,7 +66,7 @@ dependencies {
     implementation(libs.coroutines)
     //Hilt
     implementation (libs.hilt.android)
-    implementation(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

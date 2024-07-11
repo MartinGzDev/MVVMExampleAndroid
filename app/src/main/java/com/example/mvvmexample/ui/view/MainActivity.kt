@@ -1,13 +1,10 @@
 package com.example.mvvmexample.ui.view
 
 import android.os.Bundle
-import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
-import com.example.mvvmexample.R
 import com.example.mvvmexample.databinding.ActivityMainBinding
 import com.example.mvvmexample.ui.viewmodel.QuoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
