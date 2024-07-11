@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrainsKotlinKsp)
+    alias(libs.plugins.hiltPlugin)
 }
 
 android {
@@ -37,6 +39,10 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    packagingOptions {
+        exclude("META-INF/gradle/incremental.annotation.processors")
+    }
 }
 
 dependencies {
@@ -58,6 +64,9 @@ dependencies {
     implementation(libs.retrofit.converter.gson)
     //coroutines
     implementation(libs.coroutines)
+    //Hilt
+    implementation (libs.hilt.android)
+    implementation(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
